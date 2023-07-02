@@ -1,12 +1,12 @@
 <?php
-@require '<?php
+@require <?php
 // 把这里改为你的配置
 $link = new mysqli('localhost','NAME','PASSWORD','kano');
 mysqli_set_charset($link, 'utf8');
 if ($link->connect_error) {
     die("Failed to connect: " . $conn->connect_error);
 }
-$ranking = "kano_rank";';
+$ranking = "kano_rank";
 @session_start();
 $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 // non-existent default en
